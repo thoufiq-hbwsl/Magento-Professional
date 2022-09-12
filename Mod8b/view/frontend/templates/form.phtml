@@ -1,0 +1,18 @@
+<form method="post" action="<?= $block->getPostUrl() ?>">
+    <fieldset>
+        <div>
+            <label for="first_name"><?= __("First Name of Employee") ?></label>
+            <input type="text" name="first_name" id="first_name" />
+        </div>
+        <div>
+            <label for="last_name"><?= __("Last Name of Employee") ?></label>
+            <input type="text" name="last_name" id="last_name" />
+        </div>
+        <div>
+            <label for="email_id"><?= __("Email Id of Employee") ?></label>
+            <input type="text" name="email_id" id="email_id" />
+        </div>
+        <input type="submit" value="<?= __("Submit") ?>" />
+    </fieldset>
+</form>
+<hr />

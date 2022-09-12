@@ -1,0 +1,15 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="OnSalePlugin" type="Hummingbird\Mod2\Plugin\Catalog\Model\Product"/>
+    </type>
+    <type name="Magento\Theme\Block\Html\Footer">
+        <plugin name="CustomizedCopyright" type="Hummingbird\Mod2\Plugin\Theme\Block\Html\Footer"/>
+    </type>
+    <type name="Magento\Theme\Block\Html\Header">
+        <plugin name="CustomizedWelcomeMessage" type="Hummingbird\Mod2\Plugin\Theme\Block\Html\Header"/>
+    </type>
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+        <plugin name="CustomizedBreadcrumb" type="Hummingbird\Mod2\Plugin\Theme\Block\Html\Breadcrumbs"/>
+    </type>
+</config>
